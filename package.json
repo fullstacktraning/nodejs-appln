@@ -8,5 +8,8 @@
     "mongoose": "^9.1.5",
     "nodemailer": "^7.0.13",
     "zod": "^4.3.6"
+  },
+  "scripts": {
+    "start": "node server.js"
   }
 }
