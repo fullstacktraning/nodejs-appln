@@ -28,24 +28,23 @@ pipeline {
         }
 
         stage('Docker Run') {
-    steps {
-        sh '''
-        docker rm -f node-backend || true
+            steps {
+                sh '''
+                docker rm -f node-backend || true
 
-        docker run -d \
-          -p 5000:5000 \
-          --name node-backend \
-          -e PORT=$PORT \
-          -e MONGO_URL=$MONGO_URL \
-          -e JWTSECRETE=$JWTSECRETE \
-          -e EXPIRES_IN=$EXPIRES_IN \
-          -e EMAIL=$EMAIL \
-          -e PASSWORD=$PASSWORD \
-          node-backend-app
-        '''
-    }
-}
-
+                docker run -d \
+                  -p 5000:5000 \
+                  --name node-backend \
+                  -e PORT=$PORT \
+                  -e MONGO_URL=$MONGO_URL \
+                  -e JWTSECRETE=$JWTSECRETE \
+                  -e EXPIRES_IN=$EXPIRES_IN \
+                  -e EMAIL=$EMAIL \
+                  -e PASSWORD=$PASSWORD \
+                  node-backend-app
+                '''
+            }
+        }
     }
 
     post {
