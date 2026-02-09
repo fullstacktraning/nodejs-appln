@@ -58,4 +58,20 @@ CI/CD Pipeline with DevOps
     node -v
     npm -v
 
+9) enable permissions
+    sudo usermod -aG docker ubuntu
+    sudo usermod -aG docker jenkins
+    sudo usermod -aG jenkins ubuntu
+    sudo systemctl restart jenkins
+    sudo reboot
+
+10) check status of jenkins and docker
+    sudo systemctl status jenkins
+    sudo systemctl status docker
+
+
+11) get the jenkins password
+    sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+
 
