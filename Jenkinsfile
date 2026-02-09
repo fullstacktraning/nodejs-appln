@@ -40,7 +40,7 @@ pipeline {
                   -e JWTSECRETE=$JWTSECRETE \
                   -e EXPIRES_IN=$EXPIRES_IN \
                   -e EMAIL=$EMAIL \
-                  -e PASSWORD=$PASSWORD \
+                  -e PASSWORD="$PASSWORD"  \
                   node-backend-app
                 '''
             }
