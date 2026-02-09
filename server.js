@@ -14,7 +14,7 @@ app.use("/api",[authMiddleware],require("./routes/mobileRoutes"));
 app.use("/api",[authMiddleware],require("./routes/watchRoutes"));
 mongoose.connect(process.env.MONGO_URL).then(()=>{
     console.log("Connection Success");
-    app.listen(process.env.PORT,()=>{
+    app.listen(process.env.PORT,'0.0.0.0',()=>{
         console.log("Server Started");
     })
 }).catch((err)=>console.log("Connection Failed"));
