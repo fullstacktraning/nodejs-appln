@@ -73,5 +73,12 @@ CI/CD Pipeline with DevOps
 11) get the jenkins password
     sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
+12) connect to jenkins and install plugins
+
+        https://34.236.153.44:8080/
+
+        1) Git
+        2) DockerPipeline
+        3) Docker
 
 
