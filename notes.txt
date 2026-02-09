@@ -9,4 +9,53 @@ download libraries
 8) zod
 
     npm install express mongoose cors dotenv bcryptjs nodemailer jsonwebtoken zod
-        
+
+CI/CD Pipeline with DevOps
+**************************
+1) launch EC2 instance
+
+2) open below ports
+    8080 -- Jenkins
+    80 -- Docker
+    5000 -- NodeJS appln
+
+3) connect to EC2
+
+4) update ubuntu
+    > sudo apt update -y
+
+5) install jdk
+    Ex.
+        https://www.jenkins.io/doc/book/installing/linux/
+
+    sudo apt update
+    sudo apt install fontconfig openjdk-21-jre
+    java -version
+
+6) install jenkins   
+
+7) install docker
+    sudo apt install docker.io -y
+    docker --version
+
+8) install NodeJS
+    sudo apt update
+    sudo apt install curl build-essential -y
+
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+    export NVM_DIR="$HOME/.nvm"
+    source "$NVM_DIR/nvm.sh"
+    source "$NVM_DIR/bash_completion"
+
+    nvm --version
+
+    nvm install 24.13.0
+
+    nvm use 24.13.0
+    nvm alias default 24.13.0
+
+    node -v
+    npm -v
+
+
