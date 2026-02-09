@@ -77,8 +77,16 @@ CI/CD Pipeline with DevOps
 
         https://34.236.153.44:8080/
 
-        1) Git
+        1) GitServer
         2) DockerPipeline
         3) Docker
+
+13) ADD Global Credentials
+    MONGO_URL=mongodb+srv://admin:admin@careerit.uqkohdy.mongodb.net/ecomm_db?appName=CareerIT
+    PORT=5000
+    EMAIL=samba.pendela@gmail.com
+    PASSWORD=lbcw zyys ejzu jrcr
+    JWTSECRETE=secrete123
+    EXPIRES_IN=1d
 
 
